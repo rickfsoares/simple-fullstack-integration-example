@@ -1,0 +1,10 @@
+<main>
+  <ul *ngIf="pizzaList.length > 0">
+    <li *ngFor="let pizza of pizzaList">
+      <p>{{ pizza.name }}</p>
+    </li>
+  </ul>
+  <p *ngIf="pizzaList.length === 0">Nenhuma pizza encontrada.</p>
+</main>
+
+<router-outlet />
